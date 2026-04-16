@@ -13,4 +13,3 @@ int romano_para_inteiro(std::string romano) {
     }
     return -1;
 }
-
