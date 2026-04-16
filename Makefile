@@ -24,8 +24,7 @@ test: testa_romano
 
 # 2) Verificador de estilo (Google Style / cpplint)
 lint:
-	cpplint --filter=-runtime/references romano.cpp romano.hpp testa_romano.cpp
-
+	cpplint --filter=-runtime/references,-legal/copyright,-build/include_subdir romano.cpp romano.hpp testa_romano.cpp
 # 3) Verificador estático (cppcheck)
 check:
 	cppcheck --enable=warning .

@@ -1,10 +1,9 @@
 #include "romano.hpp"
+#include <string>
 
 int romano_para_inteiro(std::string romano) {
-    
-    // Retornamos 0 de propósito para o teste inicial falhar (Fase RED)
     if (romano == "I") {
         return 1;
     }
-    return -1; 
+    return -1;
 }
