@@ -8,6 +8,9 @@ int romano_para_inteiro(std::string romano) {
     if (romano == "V") {
         return 5;
     }
+    if (romano == "X") {
+        return 10;
+    }
     return -1;
 }
 
