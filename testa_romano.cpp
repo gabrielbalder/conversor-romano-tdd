@@ -7,6 +7,6 @@ TEST(RomanoTest, ConverteI) {
 }
 
 // Teste 2: Símbulo V
-TEST(RomanoTest, ConvertV){
+TEST(RomanoTest, ConvertV) {
     EXPECT_EQ(romano_para_inteiro("V"), 5);
 }
