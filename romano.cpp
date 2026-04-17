@@ -11,5 +11,7 @@ int romano_para_inteiro(std::string romano) {
     if (romano == "X") {
         return 10;
     }
+    //if (romano == "L") {
+        //return 50;
     return -1;
 }
