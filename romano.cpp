@@ -20,5 +20,8 @@ int romano_para_inteiro(std::string romano) {
     if (romano == "D") {
         return 500;
     }
+    if (romano == "M") {
+        return 1000;
+    }
     return -1;
 }
