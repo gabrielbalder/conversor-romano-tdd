@@ -25,3 +25,8 @@ TEST(RomanoTest, ConvertL) {
 TEST(RomanoTest, ConvertC) {
     EXPECT_EQ(romano_para_inteiro("C"), 100);
 }
+
+// Teste 6: Símbulo D
+TEST(RomanoTest, ConvertD) {
+    EXPECT_EQ(romano_para_inteiro("D"), 500);
+}
