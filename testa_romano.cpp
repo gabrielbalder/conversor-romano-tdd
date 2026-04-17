@@ -27,7 +27,10 @@ TEST(RomanoTest, ConvertC) {
 }
 
 // Teste 6: Símbulo D
-// Teste sucesso
 TEST(RomanoTest, ConvertD) {
     EXPECT_EQ(romano_para_inteiro("D"), 500);
+}
+
+TEST(RomanoTest, ConvertM) {
+    EXPECT_EQ(romano_para_inteiro("M"), 1000);
 }
