@@ -56,3 +56,24 @@ TEST(RomanoTest, ConverteIIII) {
     EXPECT_EQ(romano_para_inteiro("IIII"), -1);
 }
 
+// Teste 12: Letras de base 5 nao podem repetir
+TEST(RomanoTest, InvalidoRepeticaoVLD) {
+    EXPECT_EQ(romano_para_inteiro("VV"), -1);
+    EXPECT_EQ(romano_para_inteiro("LL"), -1);
+    EXPECT_EQ(romano_para_inteiro("DD"), -1);
+}
+
+// Teste 13: Letras de base 5 nao podem ser subtraidas
+TEST(RomanoTest, InvalidoSubtracaoVLD) {
+    EXPECT_EQ(romano_para_inteiro("VX"), -1);
+    EXPECT_EQ(romano_para_inteiro("LC"), -1);
+    EXPECT_EQ(romano_para_inteiro("DM"), -1);
+}
+
+// Teste 14: Subtracao com saltos invalidos
+TEST(RomanoTest, InvalidoSubtracaoDistante) {
+    EXPECT_EQ(romano_para_inteiro("IL"), -1);
+    EXPECT_EQ(romano_para_inteiro("IC"), -1);
+    EXPECT_EQ(romano_para_inteiro("XM"), -1);
+}
+
