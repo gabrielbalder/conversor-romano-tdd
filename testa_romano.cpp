@@ -51,3 +51,8 @@ TEST(RomanoTest, ConverteMMM) {
     EXPECT_EQ(romano_para_inteiro("MMM"), 3000);
 }
 
+// Teste 11: Caso invalido por repeticao excessiva
+TEST(RomanoTest, ConverteIIII) {
+    EXPECT_EQ(romano_para_inteiro("IIII"), -1);
+}
+
