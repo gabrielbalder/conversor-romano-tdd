@@ -25,21 +25,28 @@ int romano_para_inteiro(std::string romano) {
         int atual = valor_letra(romano[i]);
         if (atual == -1) return -1;
 
-        // Verifica repeticoes seguidas
         if (i > 0 && romano[i] == romano[i-1]) {
             repeticoes++;
-            // Erro: IIII, XXXX, etc
             if (repeticoes > 3) return -1;
+            if (romano[i] == 'V' || romano[i] == 'L' || romano[i] == 'D') return -1;
         } else {
             repeticoes = 1;
         }
 
-        if (i + 1 < n && valor_letra(romano[i + 1]) > atual) {
-            soma -= atual;
+        if (i + 1 < n) {
+            int proximo = valor_letra(romano[i + 1]);
+            if (proximo > atual) {
+                if (romano[i] == 'V' || romano[i] == 'L' || romano[i] == 'D') return -1;
+                if (proximo > atual * 10) return -1;
+                soma -= atual;
+            } else {
+                soma += atual;
+            }
         } else {
             soma += atual;
         }
     }
     return soma;
 }
+
 
