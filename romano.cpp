@@ -28,7 +28,8 @@ int romano_para_inteiro(std::string romano) {
         // Verifica repeticoes seguidas
         if (i > 0 && romano[i] == romano[i-1]) {
             repeticoes++;
-            if (repeticoes > 3) return -1; // Erro: IIII, XXXX, etc
+            // Erro: IIII, XXXX, etc
+            if (repeticoes > 3) return -1;
         } else {
             repeticoes = 1;
         }
