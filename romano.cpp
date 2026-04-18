@@ -18,17 +18,20 @@ int valor_letra(char letra) {
 
 int romano_para_inteiro(std::string romano) {
     int soma = 0;
+    int n = romano.length();
 
-    for (size_t i = 0; i < romano.length(); i++) {
-        int valor_atual = valor_letra(romano[i]);
+    for (int i = 0; i < n; i++) {
+        int atual = valor_letra(romano[i]);
 
-        if (valor_atual == -1) {
-            return -1;
+        if (atual == -1) return -1;
+
+        // Se houver uma próxima letra e ela for maior que a atual...
+        if (i + 1 < n && valor_letra(romano[i + 1]) > atual) {
+            soma -= atual; // Subtrai
+        } else {
+            soma += atual; // Soma normal
         }
-
-        soma = soma + valor_atual;
     }
-
     return soma;
 }
 
