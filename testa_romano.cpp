@@ -6,7 +6,7 @@ TEST(RomanoTest, ConverteI) {
     EXPECT_EQ(romano_para_inteiro("I"), 1);
 }
 
-// Teste 2: Símbulo V
+// Teste 2: Símbolo V
 TEST(RomanoTest, ConvertV) {
     EXPECT_EQ(romano_para_inteiro("V"), 5);
 }
@@ -31,7 +31,7 @@ TEST(RomanoTest, ConvertD) {
     EXPECT_EQ(romano_para_inteiro("D"), 500);
 }
 
-// Teste 6: Símbulo M
+// Teste 7: Símbulo M
 TEST(RomanoTest, ConvertM) {
     EXPECT_EQ(romano_para_inteiro("M"), 1000);
 }
