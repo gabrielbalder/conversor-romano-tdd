@@ -11,27 +11,27 @@ TEST(RomanoTest, ConvertV) {
     EXPECT_EQ(romano_para_inteiro("V"), 5);
 }
 
-// Teste 3: Símbulo X
+// Teste 3: Símbolo X
 TEST(RomanoTest, ConvertX) {
     EXPECT_EQ(romano_para_inteiro("X"), 10);
 }
 
-// Teste 4: Símbulo L
+// Teste 4: Símbolo L
 TEST(RomanoTest, ConvertL) {
     EXPECT_EQ(romano_para_inteiro("L"), 50);
 }
 
-// Teste 5: Símbulo C
+// Teste 5: Símbolo C
 TEST(RomanoTest, ConvertC) {
     EXPECT_EQ(romano_para_inteiro("C"), 100);
 }
 
-// Teste 6: Símbulo D
+// Teste 6: Símbolo D
 TEST(RomanoTest, ConvertD) {
     EXPECT_EQ(romano_para_inteiro("D"), 500);
 }
 
-// Teste 7: Símbulo M
+// Teste 7: Símbolo M
 TEST(RomanoTest, ConvertM) {
     EXPECT_EQ(romano_para_inteiro("M"), 1000);
 }
