@@ -1,6 +1,6 @@
 # Variáveis de compilação
 CXX = g++
-CXXFLAGS = -std=c++14 -Wall -fprofile-arcs -ftest-coverage
+CXXFLAGS = -std=c++14 -Wall -g -fprofile-arcs -ftest-coverage
 LIBS = -lgtest_main -lgtest -lpthread
 
 # Alvos principais
