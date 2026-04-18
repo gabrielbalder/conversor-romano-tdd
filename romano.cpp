@@ -2,6 +2,7 @@
 #include <string>
 
 // Função auxiliar para converter um caractere individual
+
 int valor_letra(char letra) {
     switch (letra) {
         case 'I': return 1;
@@ -30,3 +31,4 @@ int romano_para_inteiro(std::string romano) {
 
     return soma;
 }
+
