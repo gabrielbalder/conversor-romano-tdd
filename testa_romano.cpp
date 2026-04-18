@@ -40,3 +40,8 @@ TEST(RomanoTest, ConvertM) {
 TEST(RomanoTest, ConverteII) {
     EXPECT_EQ(romano_para_inteiro("II"), 2);
 }
+
+// Teste 9: Caso de subtração
+TEST(RomanoTest, ConverteIV) {
+    EXPECT_EQ(romano_para_inteiro("IV"), 4);
+}
