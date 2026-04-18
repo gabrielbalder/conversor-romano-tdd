@@ -35,3 +35,8 @@ TEST(RomanoTest, ConvertD) {
 TEST(RomanoTest, ConvertM) {
     EXPECT_EQ(romano_para_inteiro("M"), 1000);
 }
+
+// Teste 8: Soma simples de dois caracteres
+TEST(RomanoTest, ConverteII) {
+    EXPECT_EQ(romano_para_inteiro("II"), 2);
+}
