@@ -1,27 +1,32 @@
 #include "romano.hpp"
 #include <string>
 
+// Função auxiliar para converter um caractere individual
+int valor_letra(char letra) {
+    switch (letra) {
+        case 'I': return 1;
+        case 'V': return 5;
+        case 'X': return 10;
+        case 'L': return 50;
+        case 'C': return 100;
+        case 'D': return 500;
+        case 'M': return 1000;
+        default: return -1;
+    }
+}
+
 int romano_para_inteiro(std::string romano) {
-    if (romano == "I") {
-        return 1;
+    int soma = 0;
+
+    for (size_t i = 0; i < romano.length(); i++) {
+        int valor_atual = valor_letra(romano[i]);
+
+        if (valor_atual == -1) {
+            return -1;
+        }
+
+        soma = soma + valor_atual;
     }
-    if (romano == "V") {
-        return 5;
-    }
-    if (romano == "X") {
-        return 10;
-    }
-    if (romano == "L") {
-        return 50;
-    }
-    if (romano == "C") {
-        return 100;
-    }
-    if (romano == "D") {
-        return 500;
-    }
-    if (romano == "M") {
-        return 1000;
-    }
-    return -1;
+
+    return soma;
 }
