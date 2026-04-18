@@ -25,11 +25,13 @@ int romano_para_inteiro(std::string romano) {
 
         if (atual == -1) return -1;
 
-        // Se houver uma próxima letra e ela for maior que a atual...
+        // Se houver uma próxima letra e ela for maior que a atual
         if (i + 1 < n && valor_letra(romano[i + 1]) > atual) {
-            soma -= atual; // Subtrai
+            // Subtrai
+            soma -= atual;
         } else {
-            soma += atual; // Soma normal
+            // Soma normal
+            soma += atual;
         }
     }
     return soma;
