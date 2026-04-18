@@ -45,3 +45,9 @@ TEST(RomanoTest, ConverteII) {
 TEST(RomanoTest, ConverteIV) {
     EXPECT_EQ(romano_para_inteiro("IV"), 4);
 }
+
+// Teste 10: Limite máximo
+TEST(RomanoTest, ConverteMMM) {
+    EXPECT_EQ(romano_para_inteiro("MMM"), 3000);
+}
+
