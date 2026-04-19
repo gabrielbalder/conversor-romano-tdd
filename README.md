@@ -1,6 +1,6 @@
 # Conversor de Algarismos Romanos (TDD)
 
-Projeto desenvolvido para a disciplina de **Técnicas de Programação 2** na Universidade de Brasília (UnB). [cite_start]O objetivo é converter algarismos romanos para inteiros (até 3000) utilizando a metodologia **Test-Driven Development (TDD)**.
+Projeto desenvolvido para a disciplina de **Técnicas de Programação 2** na Universidade de Brasília (UnB). O objetivo é converter algarismos romanos para inteiros (até 3000) utilizando a metodologia **Test-Driven Development (TDD)**.
 
 ## 🛠️ Tecnologias e Ferramentas
 - **Linguagem:** C++14 
